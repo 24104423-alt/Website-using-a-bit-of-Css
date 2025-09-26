@@ -1,0 +1,112 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  color: #e0e0e0;
+}
+
+
+.container {
+  background: rgba(20, 20, 30, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.25);
+  animation: fadeIn 1.2s ease;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  background: linear-gradient(90deg, #00ffcc, #ff4fd8);
+  -webkit-text-fill-color: transparent;
+}
+
+h2, h3 {
+  margin: 20px 0 10px;
+  color: #00ffcc;
+}
+
+.intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+
+ul, ol {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+li {
+  margin: 8px 0;
+  transition: transform 0.2s, color 0.2s;
+  color: #e0e0e0;
+}
+
+li:hover {
+  transform: translateX(5px);
+  color: #ff4fd8;
+}
+
+
+.fun-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.fun-img:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+
+.btn-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00ffcc, #ff4fd8);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-link:hover {
+  background: linear-gradient(135deg, #ff4fd8, #00ffcc);
+  box-shadow: 0 0 15px rgba(0,255,204,0.4);
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}

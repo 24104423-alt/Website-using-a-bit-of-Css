@@ -1,0 +1,127 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+
+form {
+  background: rgba(15, 15, 20, 0.85);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 550px;
+  color: #e0e0e0;
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
+  animation: fadeIn 1.2s ease;
+}
+
+
+form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00ffcc, #ff4fd8);
+ 
+  -webkit-text-fill-color: transparent;
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #00ffcc;
+}
+
+input, textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(200, 200, 200, 0.7);
+}
+
+input:focus, textarea:focus {
+  border-color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+  outline: none;
+  transform: scale(1.02);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00ffcc, #ff4fd8);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff4fd8, #00ffcc);
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,255,204,0.5);
+}
+
+
+.note {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.note span {
+  display: block;
+  margin: 5px 0;
+  opacity: 0.8;
+  transition: color 0.3s;
+}
+
+.note span:hover {
+  color: #ff4fd8;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
