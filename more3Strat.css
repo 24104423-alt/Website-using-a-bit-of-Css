@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    color: #e0e0e0;
+}
+
+.container1 {
+  background: rgba(20, 20, 30, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  color: #e0e0e0;
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.25);
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #ddd;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.Frisbee-img {
+  width: 60%; /* Slightly narrower for better centering */
+  padding:80px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #472020, #df1111 80%);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto 50 auto; /* Center horizontally and add top margin */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(167, 30, 30, 0.3);
+  letter-spacing: 1px;
+}
+
+.Frisbee-img:hover {
+  background: linear-gradient(135deg, #5a3f3d, #a80606 80%);
+  transform: scale(1.07);
+  box-shadow: 0 12px 36px rgba(167, 30, 30, 0.4);
+}
+
+
+.fun-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px; /* Increased value */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.button {
+  width: 60%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #472020, #df1111 80%);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto 0 auto; /* Center horizontally */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(167, 30, 30, 0.3);
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #5a3f3d, #a80606 80%);
+  transform: scale(1.07);
+  box-shadow: 0 12px 32px rgba(167, 30, 30, 0.5);
+  filter: brightness(1.1);
+}
+
+.Frisbee-img1 {
+  width: 60%; /* Slightly narrower for better centering */
+  padding:80px 80px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #472020, #df1111 80%);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto 50 auto; /* Center horizontally and add top margin */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(167, 30, 30, 0.3);
+  letter-spacing: 1px;
+}
+
+.Frisbee-img1:hover {
+  background: linear-gradient(135deg, #5a3f3d, #a80606 80%);
+  transform: scale(1.07);
+  box-shadow: 0 12px 36px rgba(167, 30, 30, 0.4);
+}
+
+
+.fun-img1 {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px; /* Increased value */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
